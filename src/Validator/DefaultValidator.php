@@ -14,6 +14,11 @@ class DefaultValidator implements ValidatorInterface
         $this->validator = $validator;
     }
 
+    /**
+     * @param JsonSchemaInterface $jsonSchema
+     * @param array $data
+     * @throws ValidatorException
+     */
     public function validate(JsonSchemaInterface $jsonSchema, array $data): void
     {
         $data = $this->arrayToObject($data);
