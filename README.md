@@ -4,6 +4,12 @@ A library for creating and validating JSON Schemas in PHP.
 
 You won't need to write any JSON string.
 
+## Installation
+
+```
+composer require everlution/json-schema
+```
+
 ## JSON Schema definition
 
 Rather than writing JSON Schema directly in JSON we create a new PHP class where we have helpers for writing less.

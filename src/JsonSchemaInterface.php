@@ -5,6 +5,9 @@ namespace Everlution\JsonSchema;
 interface JsonSchemaInterface
 {
     const STRING_FORMAT_DATETIME = 'date-time';
+    const STRING_FORMAT_TIME = 'time'; // available since draft-7
+    const STRING_FORMAT_DATE = 'date'; // available since draft-7
+    const STRING_FORMAT_REGEX = 'regex'; // available since draft-7
     const STRING_FORMAT_EMAIL = 'email';
     const STRING_FORMAT_HOSTNAME = 'hostname';
     const STRING_FORMAT_IPV4 = 'ipv4';
