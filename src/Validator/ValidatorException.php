@@ -4,7 +4,7 @@ namespace Everlution\JsonSchema\Validator;
 
 use Throwable;
 
-class RecordValidatorException extends \Exception
+class ValidatorException extends \Exception
 {
     private $json;
 

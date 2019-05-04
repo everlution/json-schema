@@ -5,7 +5,7 @@ namespace Everlution\JsonSchema\Validator;
 use Everlution\JsonSchema\JsonSchemaInterface;
 use JsonSchema\Validator;
 
-class DefaultRecordValidator implements ValidatorInterface
+class DefaultValidator implements ValidatorInterface
 {
     private $validator;
 
@@ -23,7 +23,7 @@ class DefaultRecordValidator implements ValidatorInterface
             ->validate($data, $jsonSchema->toArray());
 
         if (!$this->validator->isValid()) {
-            throw new RecordValidatorException(json_encode($data), $this->validator->getErrors());
+            throw new ValidatorException(json_encode($data), $this->validator->getErrors());
         }
     }
 
