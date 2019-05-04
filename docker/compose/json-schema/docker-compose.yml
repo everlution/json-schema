@@ -1,0 +1,11 @@
+src:
+    image: busybox
+    restart: always
+    volumes:
+        - "../../../:/var/www/project"
+php-cli:
+    build: ../../images/php-cli
+    tty: true
+    volumes_from:
+        - src
+    working_dir: /var/www/project

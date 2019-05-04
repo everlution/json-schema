@@ -1,0 +1,25 @@
+{
+    "name": "everlution/json-schema",
+    "type": "library",
+    "description": "Creating and validating JSON Schema in PHP",
+    "keywords": ["json schema"],
+    "support": {
+        "issues": "https://github.com/everlution/json-schema"
+    },
+    "authors": [
+        {
+            "name": "Michael Caldera",
+            "email": "michael.caldera@everlution.com",
+            "homepage": "https://everlution.com"
+        }
+    ],
+    "require": {
+        "php": ">=7"
+    },
+    "require-dev": {
+        "justinrainbow/json-schema": "^5.2"
+    },
+    "autoload": {
+        "psr-4": {"Everlution\\JsonSchema\\": "src/"}
+    }
+}
