@@ -1,6 +1,8 @@
-# Everlution JSON Schema
+# Everlution JSON Schema (Definition and Validation)
 
-A library for creating and validating JSON Schemas in PHP
+A library for creating and validating JSON Schemas in PHP.
+
+You won't need to write any JSON string.
 
 ## JSON Schema definition
 
@@ -28,6 +30,8 @@ class JwtTokensRequestJsonSchema extends AbstractJsonSchema
                 'secret' => [
                     'type' => 'string',
                 ],
+                // you can use helpers like this to reduce the amount of code to write and reduce mistakes
+                // 'whateverString' => $this->getTypeString(?bool $nullable, ?int $minLength, ?int $maxLength, ?string $pattern, ?string $format)
             ],
         ];
         
