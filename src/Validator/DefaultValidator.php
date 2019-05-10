@@ -40,6 +40,10 @@ class DefaultValidator implements ValidatorInterface
      */
     private function arrayToObject($array): object
     {
+        if (count($array) == 0) {
+            return new \stdClass();
+        }
+
         // First we convert the array to a json string
         $json = json_encode($array);
 
